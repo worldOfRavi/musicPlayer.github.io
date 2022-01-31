@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Coding Nepal music Player</title>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="wrapper">
+            <div class="top_bar">
+                <i class="material-icons">expand_more</i>
+                <span>Now Playing</span>
+                <i class="material-icons" title="more options">more_horiz</i>
+            </div>
+            <div class="img_area">
+                <img src="" alt="" class="cover">
+            </div>
+            <div class="song_details">
+                <p class="name"></p>
+                <p class="artist"></p>
+            </div>
+            <div class="progress_area">
+                <div class="progress_bar"></div>
+            </div>
+            <div class="timer">
+                <span class="current">0:00</span>
+                <span class="duration"></span>
+            </div>
+            <audio src="" id="mainAudio"></audio>
+            <!-- controls -->
+            <div class="controls">
+                <i id="repeat_plist" class="material-icons" title="playlist looped">repeat</i>
+                <i id="prev" class="material-icons" title="previous">skip_previous</i>
+                <div class="play_pause">
+                    <i id="play" class="material-icons" title="play">play_arrow</i>
+                </div>
+                <i id="next" class="material-icons" title="next">skip_next</i>
+                <i id="more_music" class="material-icons" title="music list">queue_music</i>
+            </div>
+            <div class="music_list">
+                <div class="header">
+                    <div class="row">
+                        <i class="material-icons">queue_music</i>
+                        <span>Music List</span>
+                    </div>
+                    <i id="close" class="material-icons" title="close">close</i>
+                </div>
+                <ul>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
